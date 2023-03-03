@@ -215,8 +215,9 @@ form input:last-child {
     font-weight: 700;
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
-    border-left: 0px;
     cursor: pointer;
+    border-left: 0;
+    padding-left: 0;
 }
 
 .filtres {
