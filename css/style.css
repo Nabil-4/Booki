@@ -506,8 +506,13 @@ footer nav a:hover {
 
     .top li a {
         padding-left: 45px;
-        padding-right: 10px;
+        padding-right: 35px;
         padding-top: 45px;
+    }
+
+    .top ul li:nth-child(2) a {
+        padding-left: 45px;
+        padding-right: 70px;
     }
 
     .top a {
@@ -652,15 +657,19 @@ footer nav a:hover {
         padding-left: 10px;
         padding-right: 10px;
         border-top: none;
-        border-bottom: 4px solid #0065FC;
+        border-bottom: 4px solid white;
         padding-bottom: 23px;
+    }
+
+    .top li a:hover {
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
     }
 
     .top ul li:nth-child(1) a{
         margin-left: -58px;
         padding-right: 20px;
-        padding-left: 22px;
-
+        padding-left: 48px;
     }
 
     .top ul li:nth-child(2) a {
