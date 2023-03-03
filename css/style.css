@@ -6,7 +6,7 @@
 }
 
 @keyframes shadow {
-    0% {}
+    0% {box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.5)}
     100% {box-shadow: -6px 6px 10px -4px;}
 }
 
@@ -129,7 +129,11 @@ article:hover {
 }
 
 .top img:hover {
-    scale: 1.5;
+    transform: scale(1.5);
+}
+
+.top nav {
+    margin-right: -40px;
 }
 
 .top ul {
@@ -139,7 +143,7 @@ article:hover {
 .top li a {
     transition: all 0.5s;
     border-top: 4px solid white;
-    padding-top: 44px;
+    padding-top: 45px;
     padding-left: 45px;
     padding-right: 45px;
 }
@@ -244,31 +248,52 @@ form input:last-child {
     display: flex;
 }
 
-.filtres li img {
+.filtres li::before {
     padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 1px;
+    color: #0065FC;
+    font-family: "Font Awesome 5 Free";
+    transform: scale(1.3);
 }
 
 .filtres li:hover {
     background-color: #DEEBFF;
 }
 
-.info {
+.filtres li:nth-child(1):before {
+    content: "\f53a";
+}
+
+.filtres li:nth-child(2):before {
+    content: "\f183";
+}
+
+.filtres li:nth-child(3):before {
+    content: "\f004";
+}
+
+.filtres li:nth-child(4):before {
+    content: "\f6d3";
+}
+
+header div:nth-child(2) div:last-child{
     display: flex;
     margin-top: 25px;
     margin-bottom: 30px;
 }
 
-.info i {
+header div:nth-child(2) div:last-child i {
     border: 1px #D9D9D9 solid;
     border-radius: 100%;
     width: 24px;
     height: 24px;
-    padding-left: 7px;
+    padding-left: 8px;
     padding-top: 3px;
     margin-right: 8px;
 }
 
-.main {
+#main {
     display: flex;
 }
 
@@ -324,9 +349,14 @@ form input:last-child {
     padding: 5px;
 }
 
-#hebergements div:nth-child(3) img {
+#hebergements div:nth-child(3) i {
     width: 12px;
     height: 12px;
+    margin-right: -1px;
+}
+
+#hebergements div:nth-child(3) i:last-child {
+    color: #F2F2F2;
 }
 
 #hebergements a:nth-child(7) {
@@ -359,6 +389,11 @@ form input:last-child {
 
 #populaires h2 {
     margin-right: 100px;
+    margin-left: 15px;
+}
+
+#populaires h3 {
+    padding-bottom: 7px;
 }
 
 #populaires article {
@@ -380,17 +415,14 @@ form input:last-child {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #populaires a div > div {
     flex-direction: row;
     margin: 0;
-}
-
-
-#populaires p {
-    margin-bottom: 30px;
 }
 
 #populaires figure img {
@@ -401,9 +433,20 @@ form input:last-child {
     padding: 5px;
 }
 
-#populaires div:nth-child(3) img {
+#populaires div:nth-child(2) > div:first-child {
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+#populaires div:nth-child(2) i {
     width: 12px;
     height: 12px;
+    margin-right: 2px;
+}
+
+#populaires div:nth-child(2) i:last-child {
+    color: #F2F2F2;
 }
 
 .populaires-top i {
@@ -474,11 +517,11 @@ footer li {
     margin-bottom: 12px;
 }
 
-footer nav a {
+footer nav li {
     position: relative;
 }
 
-footer nav a:hover {
+footer nav li:hover {
     animation: link-up 0.5s forwards;
 }
 
@@ -503,6 +546,10 @@ footer nav a:hover {
 
     .top {
         margin-right: 80px;
+    }
+
+    .top nav {
+        margin-right: -50px;
     }
 
     .top li a {
@@ -535,7 +582,7 @@ footer nav a:hover {
         align-items: center;
     }
     
-    .main {
+    #main {
         flex-wrap: wrap;
         justify-content: center;
         margin-right: 30px;
@@ -567,9 +614,15 @@ footer nav a:hover {
         margin-right: 40px;
     }
 
-    #populaires div:nth-child(2) {
+    #populaires div:nth-of-type(2){
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #populaires div:nth-child(2) div:nth-child(2) div:nth-child(2) {
+        margin-left: -20px;
     }
 
     #populaires article {
@@ -697,6 +750,10 @@ footer nav a:hover {
         padding-right: 21px;
     }
 
+    form input:last-child {
+        font-size: 1rem;
+    }
+
     .filtres {
         flex-direction: column;
     }
@@ -720,11 +777,11 @@ footer nav a:hover {
         align-items: center;
     }
 
-    .info {
+    header div:nth-child(2) div:last-child {
         margin-left: 15px;
     }
 
-    .main {
+    #main {
         margin: 0;
     }
 
@@ -735,6 +792,12 @@ footer nav a:hover {
         margin: 0;
         width: inherit;
         animation:2s apparition 4s forwards;
+    }
+
+    #hebergements h2:first-of-type {
+        margin-left: 43px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #hebergements article {
@@ -760,6 +823,7 @@ footer nav a:hover {
     #populaires h2 {
         font-size: 1.5rem;
         margin: 0;
+        margin-left: 8px;
     }
 
     .populaires-top i {
@@ -788,14 +852,29 @@ footer nav a:hover {
         font-size: 0.9rem;
     }
 
+    #populaires div:nth-of-type(2) {
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-bottom: 47px;
+    }
+
     #populaires figure img {
         width: 137px;
         height: 144px;
     }
 
     #populaires div:nth-child(3) img {
-        scale: 1.1;
+        transform: scale(1.1);
         margin-left: 2px;
+    }
+
+    #populaires div:nth-child(2) > div:nth-child(2) {
+        flex-direction: row;
+    }
+
+    #populaires div:nth-child(2) div:nth-child(2) div:nth-child(2) {
+        margin-left: -7px;
+        padding-bottom: 0;
     }
 
     #activites {
