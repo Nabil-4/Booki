@@ -597,12 +597,12 @@ footer nav li:hover {
 
     #populaires div:nth-child(1) {
         margin-bottom: 20px;
-        margin-left: 20px;
         justify-content: space-between;
     }
 
     #populaires div:nth-child(1) h2 {
         font-size: 1.2rem;
+        margin-left: 35px;
     }
 
     #populaires div:nth-child(1) i {
@@ -841,7 +841,7 @@ footer nav li:hover {
 
     #populaires article h3 {
         font-size: 1.1rem;
-        width: inherit;
+        width: 150px;
     }
 
     #populaires article p {
