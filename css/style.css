@@ -831,7 +831,7 @@ footer nav li:hover {
         margin-left: 21px;
         margin-top: 30px;
         margin-bottom: 10px;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     #hebergements article {
@@ -855,7 +855,7 @@ footer nav li:hover {
     }
 
     #populaires div:nth-child(1) h2{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin-left: 28px;
     }
 
@@ -926,7 +926,7 @@ footer nav li:hover {
     #activites h2 {
         margin-left: 20px;
         width: 120px;
-        font-size: 1.5rem; 
+        font-size: 1.3rem; 
     }
 
     #activites article{
