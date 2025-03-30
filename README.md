@@ -1,36 +1,36 @@
 # Booki
 
-**Booki** est un projet de site web statique développé en HTML et CSS, visant à fournir une plateforme de réservation d'hébergements et d'activités touristiques.
+**Booki** is a static website project developed using HTML and CSS, aimed at providing a platform for booking accommodations and tourist activities.
 
-## Fonctionnalités
+## Features
 
-- **Page d'accueil** présentant une liste d'hébergements et d'activités disponibles.
-- **Navigation intuitive** permettant aux utilisateurs de parcourir facilement les différentes sections du site.
-- **Design responsive** assurant une expérience utilisateur optimale sur divers appareils, y compris les ordinateurs de bureau, les tablettes et les smartphones.
+- **Homepage** displaying a list of available accommodations and activities.
+- **Intuitive navigation** allowing users to easily browse different sections of the site.
+- **Responsive design** ensuring an optimal user experience across various devices, including desktops, tablets, and smartphones.
 
-## Technologies utilisées
+## Technologies Used
 
-- **HTML5** : Structure du site.
-- **CSS3** : Styles et mise en page.
+- **HTML5**: Website structure.
+- **CSS3**: Styling and layout.
 
-## Structure du projet
+## Project Structure
 
-Le projet est organisé comme suit :
+The project is organized as follows:
 
-- `index.html` : Fichier principal contenant la structure HTML du site.
-- `css/` : Dossier contenant les feuilles de style CSS.
-- `img/` : Dossier regroupant les images utilisées sur le site.
-- `.vscode/` : Dossier contenant les configurations spécifiques à l'éditeur Visual Studio Code.
+- `index.html`: Main file containing the website's HTML structure.
+- `css/`: Folder containing CSS stylesheets.
+- `img/`: Folder storing images used on the site.
+- `.vscode/`: Folder containing specific configurations for Visual Studio Code.
 
-## Installation et utilisation
+## Installation and Usage
 
-1. **Cloner le dépôt** :
+1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/Nabil-4/Booki-nabil.git
+   git clone https://github.com/Nabil-4/Booki.git
 
-2. Ouvrir le fichier index.html dans votre navigateur web pour visualiser le site.
+2. Open the index.html file in your web browser to view the site.
 
 <br>
 
-<sub>Ce projet a été réalisé dans un but éducatif.<sub/>
+<sub>This project was created for educational purposes.<sub/>
